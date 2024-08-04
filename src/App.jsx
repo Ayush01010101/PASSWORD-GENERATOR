@@ -66,7 +66,7 @@ function App() {
     <>
       <div className="div h-screen w-screen bg-gray-800 flex items-center justify-center">
 
-          <div className="container bg-gray-500 mx-auto  h-40 w-[70%] rounded-2xl flex flex-col items-center gap-4 flex-wrap md:p-0 hover:shadow-slate-700 hover:shadow-2xl">
+          <div className="container bg-gray-500 mx-auto  h-40 w-fit  rounded-2xl flex flex-col items-center gap-4  md:p-0 hover:shadow-slate-700 hover:shadow-2xl">
             <div className="text text-white text-center text-3xl">
               <h1 className='font-bold'>Password Generator</h1>
             </div>
@@ -79,7 +79,7 @@ function App() {
             <div className="options text-white flex gap-7">
 
 
-              <div className="range space-x-3">
+              <div className="range space-x-3 border flex-col items-center justify-center">
                 <input className='w-24 cursor-pointer' type="range" min={8} max={22} value={length} onChange={(e)=>{setlength(e.target.value)}} />
                 <label >Length : {length}</label>
               </div>
